@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:cstm="clr-namespace:ZdfFlatUI.CstmControls"
+                    xmlns:btn="clr-namespace:ZdfFlatUI.CstmControls.Buttons"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/JYX.UI;component/CstmControls/Buttons/Themes/ButtonStyle.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+    <!--文字跑马灯-->
+    <Style TargetType="{x:Type cstm:MarqueeText}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type cstm:MarqueeText}">
+                    <Canvas x:Name="Container" ClipToBounds="True">
+                        <TextBlock x:Name="Marqueer" Cursor="Hand"
+                                   Text="{Binding MarqueeContent, RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

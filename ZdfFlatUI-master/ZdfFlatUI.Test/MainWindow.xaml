@@ -1,0 +1,27 @@
+﻿<Window x:Class="ZdfFlatUI.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:JYXUI="clr-namespace:ZdfFlatUI.CstmControls;assembly=JYX.UI"
+        xmlns:JYX.Btn="clr-namespace:ZdfFlatUI.CstmControls.Buttons;assembly=JYX.UI"
+        xmlns:jyx.uc="clr-namespace:ZdfFlatUI.UserControls;assembly=JYX.UI"
+        Title="MainWindow" Height="350" Width="525" Background="Transparent">
+    <Grid>
+        <StackPanel x:Name="StackPanel" Orientation="Vertical">
+            
+            <JYXUI:MarqueeText x:Name="scrollingTextControl" 
+                                MarqueeContent="来自星睿视最新产品信息： 2012年7月份，星睿视正式发布最新款基于TI HIGH PROFILE架构的210万像素1080P高性价比网络摄像机" 
+                                MarqueeDuration="20"
+                                MarqueeType="RightToLeft"
+                                Height="30"
+                               HorizontalAlignment="Stretch"
+                               FontSize="16" Foreground="White"/>
+            <!--<StackPanel Orientation="Horizontal">
+                <JYX.Btn:ImageButtonBt ImageUrl="Resources/Images/常用语.png" Height="100" Width="100" ImageText="图片按钮" Foreground="Lime" FontSize="16" Click="ImageButton_Click"></JYX.Btn:ImageButtonBt>
+                <JYX.Btn:ImageButtonMd Height="30" Width="100" Text="点击" FontSize="16" Foreground="White" ImageUrl="Resources/Images/按钮.png" PressImageUrl="Resources/Images/press.png"></JYX.Btn:ImageButtonMd>
+                <JYX.Btn:ImageButtonRt Height="30" Width="65" Text="点击" FontSize="16" Foreground="White" ImageUrl="Resources/Images/删除.png"></JYX.Btn:ImageButtonRt>
+            </StackPanel>-->
+            
+            <!--<jyx.uc:WindProgressBar  CanvasSize="100" EllipseCount="10" EllipseSize="10" StepAngle="36" TimeSpan="600"/>-->
+        </StackPanel>
+    </Grid>
+</Window>
